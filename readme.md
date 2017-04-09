@@ -3,10 +3,9 @@
 # METHOD
 まず、訓練データを<br/>
 <pre><code>&lt;document><br/>
-    &lt;ID>識別ID&lt;/ID>
-<br/>
-    &lt;cat>カテゴリー名&lt;/cat><br/>
-    &lt;body>内容&lt;/body><br/>
+        &lt;ID>識別ID&lt;/ID><br/>
+        &lt;cat>カテゴリー名&lt;/cat><br/>
+        &lt;body>内容&lt;/body><br/>
 &lt;/document><br/></code></pre>
 のようにタグ付けする<br/>
 次に、単語間のスペースで区切り、一行に一単語のtxtを作る<br/>
@@ -14,9 +13,8 @@ clean.pyを実行すると、カンマなどが取り除かれて、各Document�
 classfication.pyにその分類確率を入れて実行するとresult.txtにIDとともに分類されたカテゴリー名が記述される<br/>
 また、入力文書は次のようにタグを付与する<br/>
 <pre><code>&lt;document><br/>
-    &lt;ID>識別ID&lt;/ID>
-    <br/>
-    &lt;cat>&lt;/cat><br/>
-    &lt;body>内容&lt;/body><br/>
+        &lt;ID>識別ID&lt;/ID><br/>
+        &lt;cat>&lt;/cat><br/>
+        &lt;body>内容&lt;/body><br/>
 &lt;/document>
 </code></pre>
